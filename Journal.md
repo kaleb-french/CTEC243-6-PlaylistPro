@@ -12,3 +12,6 @@ The Array takes O(1) to traverse replace and O(N) move the items to accommodate.
 
 Phase 4-
 Having a second list that is sorted allows you to sort on demand when needed instead of maintaining one sorted list, in this way you can sort in different ways having multiple lists each sorted a different way. It allows you to add and remove sorting styles from the code without modifing the base list class.
+
+Phase 5-
+I was seeing these possible errors as I was building and encounter some of them. I already had to fix adding to empty list and adding at zero index, adding sorted to the end of the list. after the bugs I encounter along the way I believe I accounted for these issues stated.

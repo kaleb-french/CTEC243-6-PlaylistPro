@@ -18,11 +18,9 @@ public class SortedLinkedList extends SinglyLinkedList{
         Node current = first;
         Node previous = null;
         while(current != null){
-            System.out.println("Test1");
             int result = compare.compare(current.getSong(), song);
             Node newNode = new Node(null,song);
             if(result > 0 || result == 0){
-                System.out.println("Test2");
                 newNode.setLink(current);
                 if(current == first){
                     first = newNode;
@@ -33,9 +31,7 @@ public class SortedLinkedList extends SinglyLinkedList{
                 }
                 return;
             }else if(result < 0){
-                System.out.println("Test3");
                 if(current.getLink() == null){
-                    System.out.println("TestX");
                     current.setLink(newNode);
                     return;
                 }

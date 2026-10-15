@@ -14,11 +14,11 @@ public class Main {
         titleSorted.add(1,new Song("Fell On Black Days", "Soundgarden", 302));
         titleSorted.add(2,new Song("Learn to Fly", "The Foo Fighters", 289));
         titleSorted.display();
-        System.out.println("\nSong in Database--- By Title \n");
+        System.out.println("\nSong in Database--- By Artist \n");
         SortedLinkedList artistedSorted = new SortedLinkedList(Comparator.comparing(Song::getArtist));
         artistedSorted.add(0,new Song("Plush", "Stone Temple Pilots", 316));
-        artistedSorted.add(1,new Song("Fell On Black Days", "Soundgarden", 302));
-        artistedSorted.add(2,new Song("Learn to Fly", "The Foo Fighters", 289));
+        artistedSorted.add(0,new Song("Fell On Black Days", "Soundgarden", 302));
+        artistedSorted.add(0,new Song("Learn to Fly", "The Foo Fighters", 289));
         artistedSorted.display();
     }
 }
