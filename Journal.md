@@ -9,3 +9,6 @@ My version checks to see if its in first and the only one and removes the refere
 
 Phase 3-
 The Array takes O(1) to traverse replace and O(N) move the items to accommodate. The LinkList take O(N) Taversal time and another bit of O(1) to replace the link references. With this comparison I believe it's kind of a wash between the two.
+
+Phase 4-
+Having a second list that is sorted allows you to sort on demand when needed instead of maintaining one sorted list, in this way you can sort in different ways having multiple lists each sorted a different way. It allows you to add and remove sorting styles from the code without modifing the base list class.

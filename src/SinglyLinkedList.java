@@ -2,8 +2,8 @@ import java.util.Iterator;
 
 public class SinglyLinkedList implements Iterable<Song>{
     //f
-    private Node first;
-    private Node last;
+    protected Node first;
+    protected Node last;
     //c
     SinglyLinkedList(){
 
