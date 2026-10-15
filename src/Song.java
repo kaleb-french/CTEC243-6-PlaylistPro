@@ -20,6 +20,6 @@ public class Song {
 	    return this.duration;
 	}
 	public String toString(){
-	    return "Song: " + this.title + " by: " + this.duration + " length: " + this.duration;
+	    return "Song: " + this.title + " by: " + this.artist + " length: " + this.duration;
 	}
 }

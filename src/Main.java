@@ -10,11 +10,10 @@ public class Main {
         System.out.println("Song in Database--- \n");
         singly.display();
         Iterator<Song> radio = singly.iterator();
-        System.out.println("\n" + radio.next());
-        System.out.println("\n --- \n");
-        System.out.println("\n" + radio.next());
-        radio.remove();
-        System.out.println("\n --- \n");
+        System.out.println(singly.get(0).toString());
+
+        singly.add(4, new Song("Somebody To Love","Queen", 220));
+        System.out.println("");
         singly.display();
 
     }

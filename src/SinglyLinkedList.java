@@ -26,6 +26,39 @@ public class SinglyLinkedList implements Iterable<Song>{
             current = current.getLink();
         }
     }
+    public Song get(int index){
+        Node current = first;
+        int i = 0;
+        while(current != null){
+            if(index == i){
+                return current.getSong();
+            }
+            current = current.getLink();
+            i++;
+        }
+        return new Song("Invaild", "ERROR", 404);
+    }
+    public void add(int index, Song song){
+        Node current = first;
+        Node previous = null;
+        int i = 0;
+        while(current != null){
+            if(index == i){
+                Node newNode = new Node(current,song);
+                previous.setLink(newNode);
+                return;
+            }
+            previous = current;
+            current = current.getLink();
+            i++;
+        }if(index == i + 1){
+            Node newNode = new Node(null, song);
+            last.setLink(newNode);
+            last = newNode;
+            return;
+        }
+        System.out.println("Error Index out of Scope!");
+    }
 	@Override
 	public Iterator<Song> iterator() {
 		return new Iterator<Song>() {

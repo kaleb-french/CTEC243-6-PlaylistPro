@@ -6,3 +6,6 @@ We set up the linkedList created a few items to store in nodes and displayed tha
 
 Phase 2-
 My version checks to see if its in first and the only one and removes the references, then checks if its first and has a link then changes the first to the link, then finall steps through the rest one by one checking for the previous returned song as then, then takes the found spot as now and takes then.setLink() and sets it to now.getLink() to remove that reference. It keeps the current pointer by doing this to the object before the pointer in the linked list.
+
+Phase 3-
+The Array takes O(1) to traverse replace and O(N) move the items to accommodate. The LinkList take O(N) Taversal time and another bit of O(1) to replace the link references. With this comparison I believe it's kind of a wash between the two.
